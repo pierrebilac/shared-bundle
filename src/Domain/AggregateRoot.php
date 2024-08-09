@@ -12,7 +12,7 @@ abstract class AggregateRoot
      */
     private array $events = [];
 
-    protected function record(DomainEvent $domainEvent): void
+    public function record(DomainEvent $domainEvent): void
     {
         $this->events[] = $domainEvent;
     }
